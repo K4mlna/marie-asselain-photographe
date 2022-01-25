@@ -1,0 +1,2388 @@
+
+*{scroll-behavior: smooth;}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    position:relative;
+    height:100%;
+    
+    
+}
+
+
+
+main{
+    width:100%;
+    height:4000px;
+    
+}
+
+/*****************************/
+/********** HEADER ***********/
+/*****************************/
+
+header{
+    position:fixed;
+    z-index: 3;
+    background-color: black;
+    width:850px;
+    border-radius: 0 0 0 70px;
+    height:80px;
+    top:0px;
+    right:0px;
+    border: 3px white solid;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.link{
+    color:white;
+    text-decoration: none;
+    transition:300ms linear;
+}
+
+.link:hover{
+    color:rgb(158, 0, 0);
+    text-decoration: none;
+}
+#topbar{
+    height:60px;
+    position:fixed;
+    display:flex;
+    right:20px;
+    height:60px;
+    justify-content: space-between;
+    width:800px;
+}
+
+
+
+#topbar > div > button > span{
+    background:rgb(158, 0, 0);
+    bottom:0;
+    width:100%;
+    height:3px;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition:transform 0.6s;
+}
+#topbar > div > button:hover > span{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition:transform 0.6s;
+}
+
+#topbar > div > button:hover {
+    color:rgb(158, 0, 0);
+    transition:300ms linear;
+}
+
+
+#topbar > div > button {
+    background-color: rgba(0, 0, 0, 0);
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    outline:none;
+    border: rgb(255, 255, 255) 0px solid;
+    width:auto;
+    display:flex;
+    flex-direction: column-reverse;
+    
+}
+
+#topbar > div > button > a{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+
+#topbar > div {
+    gap:45px;
+    padding-left:20px;
+    display:flex;
+    height:100%;
+    align-items:center;
+}
+
+/*****************************/
+/********** top of the main ***********/
+/*****************************/
+
+#splash{
+    width:100%;
+    height:1080px;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+    
+    
+}
+
+
+h1 > span{
+    color:white;
+    font-size:200px;
+    font-family:'Corinthia', cursive;
+}
+
+h1,h2{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+h1{
+    padding-bottom:300px;
+}
+
+h2{
+    top:600px;
+}
+h2 > span {
+    color:white;
+    font-size:100px;
+    font-family:'Corinthia', cursive;
+}
+
+h1:hover, h2:hover{
+    cursor:default;
+}
+
+#splash {
+    transition: 300ms linear;
+}
+#splash > div {
+    
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top:460px;
+    gap:30px;
+    left:0px;
+}
+#splash > div > a{
+    width: 200px;
+    height: 130px;
+    left:0;
+    border-radius: 0px 90px 90px 0px;
+    background-color: white;
+    font-size: 100px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:black;
+    transition:210ms linear;
+}
+
+#splash > div > a:hover{
+color:white;
+background-color:rgb(158, 0, 0); ;
+}
+
+/* les photos */
+
+.pictures,.pictures2{
+    background-color:rgba(0, 0, 0, 0.904);
+    width:100%;
+    height:900px;
+    display:flex;
+}
+
+#leftpic1{
+    width:600px;
+    height:auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+h3{
+    width:600px;
+    height:800px;
+    border-right: white 3px solid;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Corinthia', cursive;
+}
+
+h3 > span {
+    font-size:130px;
+}
+
+
+
+#rightpic1{
+    width:100%;
+    height:100%;
+}
+
+#carouselbooks{
+    width:100%;
+    height:100%;
+}
+
+#carouselmode{
+    width:100%;
+    height:100%;
+    padding-bottom:53px;
+}
+
+#onepic, #solopic1{
+    display:flex;
+    gap:20px;
+    padding-left:10px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 45px;
+
+}
+
+#solopic1 > img {
+    width:100%;
+    height:800px;
+    object-fit: cover;
+}
+
+#onepic > img {
+    width:32%;
+    height:800px;
+    object-fit:cover;
+}
+
+
+/* second carousel */
+
+#carouselmode {
+    display:flex;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+
+
+h5{
+    width:600px;
+    height:800px;
+    border-right: white 3px solid;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Corinthia', cursive;
+}
+
+h5 > span {
+    font-size:130px;
+}
+
+
+
+/*  ************* third carousel about animals ********** */
+
+h4{
+    width:600px;
+    height:800px;
+    border-right: white 3px solid;
+    color:white;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4 > span {
+    font-size:90px;
+    font-family: 'Corinthia', cursive;
+}
+
+h4 > p{
+    width:510px;
+    font-size:18px;
+    text-align: justify;
+    padding-left:34px;
+    padding-top:10px;
+    
+    
+}
+
+#squarepic{
+    padding-top: 45px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:19px;
+
+}
+
+#solopic3{
+margin-left:15px;
+margin-bottom:9px;
+}
+
+#solopic3 > img {
+    width:100%;
+    height:800px;
+    object-fit: cover;
+}
+
+#squarepic > img{
+    width:31.6%;
+    height:390px;
+    object-fit: cover;
+    
+}
+
+#carouselanimals, #carouselmariage {
+    display:flex;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    padding-bottom: 54px;
+}
+
+/* section color */
+
+main > section:nth-child(2n+1){
+    background-color: black;
+}
+
+/* section "aboutme" */
+
+#aboutme{
+    width:100%;
+    height:1100px;
+    background-color:rgba(0, 0, 0, 0.904);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+h6{
+    padding-top:30px;
+    width:1000px;
+    border-bottom:3px solid white;
+    display:flex;
+    justify-content: center;
+}
+
+h6 > span{
+    font-family:'Corinthia', cursive;
+    font-size: 150px;
+    color:white;
+    padding-top:30px;
+}
+
+#aboutmebottom{
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+#aboutmebottom > div{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutmebottom > div > div{
+    border-radius:800px;
+    background-color: white;
+    height:400px;
+    width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutmebottom > div > div > img {
+    width:98%;
+    height:98%;
+    object-fit: cover;
+    border-radius: 900px;
+    
+
+}
+
+h7 > span{
+    font-family:'Corinthia', cursive;
+    font-size: 120px;
+    color:white;
+    padding-top:30px;
+}
+
+#aboutmebottomparagraph{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+#aboutmebottomparagraph > div{
+    width:90%;
+    height:auto;
+    color:white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size:19px;
+}
+
+#aboutmebottomparagraph > div > p{
+    text-align:justify;
+}
+
+#aboutmeborder{
+    width:4%;
+    height:80%;
+    border-left: white 3px solid;
+}
+
+/* section myservices */
+
+#myservices {
+width:100%;
+height:1100px;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+#servicebox {
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:35px;
+    padding-left: 35px;
+    padding-right:35px;
+    
+}
+
+#servicebox > div {
+    height:100%;
+    width:100%;
+    display:flex;
+    gap:30px;
+    justify-content: center;
+}
+
+
+#servicebox > div > div {
+    height:90%;
+    width: 90%;
+    background-color:white;
+    border: 3px rgb(255, 255, 255) solid;
+    border-radius: 90px;
+    display:flex;
+}
+
+#servicebox > div > div > img {
+    width:50%;
+    height:100%;
+    object-fit: cover;
+    border-radius:90px 0 0 90px;
+    border-right:0px solid black;
+}
+
+#mariagee {
+    object-position:80%;
+}
+#editoo{
+    object-position:0%;
+}
+
+.textservice{
+    width:100%;
+    height:100%;
+    border-radius:0 90px 90px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+
+.title{font-size: 35px;
+    text-align: center;
+    width:90%;}
+.purpose{font-size: 20px;
+    text-align: center;
+    width:90%;
+}
+.time{font-size:20px;
+    text-align: center;
+    width:90%;}
+.money{font-size:20px;
+    text-align: center;
+    width:90%;}
+
+/* section contact */
+
+#contactme{
+
+    background-color: rgba(0, 0, 0, 0.904);
+    width:100%;
+    height:1100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#paragraphcontactme{color:white;
+width:90%;
+height:300px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size:30px;
+text-align: center;}
+
+
+
+#form{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    height:100%;
+}
+
+#mail{
+    background-color:white;
+    outline:none;
+    border:3px solid white;
+    border-radius: 80px 80px 0px 0px;
+    color:black;
+    font-size:30px;
+    padding:30px;
+    border-bottom: rgb(158, 0, 0) 3px solid;
+}
+
+#messages{
+    height:100%;
+    color:black;
+    background-color:white;
+    outline:none;
+    border:3px solid white;
+    border-bottom:none;
+    border-top: none;
+    font-size:30px;
+    padding:30px;
+}
+
+#submitbutton{
+    
+    border-radius: 90px;
+    outline:none;
+    height:50px;
+    width: 300px;
+    font-size: 25px;
+    transition:90ms linear;
+    position:absolute;
+    right:140px;
+    margin-top:590px;
+    background-color:rgb(158, 0, 0);
+    color:white;
+    border:none;
+}
+
+#submitbutton:hover{
+    background-color:rgb(105, 0, 0);
+    color:rgba(255, 255, 255, 0.664);
+}
+
+::-webkit-input-placeholder{
+    color:rgb(158, 0, 0)
+}
+
+/* responsive */
+/* splash section */
+
+
+@media only screen and (max-width:1658px){
+    h1 {
+        top:270px;
+    }
+    h1 > span {
+        font-size:160px;
+    }
+
+    h2{
+        top:550px;
+        transition:300ms linear
+    }
+    h2 > span {
+        font-size: 80px;
+    }
+
+    
+
+    #splash > div > a{
+        width:160px;
+        font-size:90px;
+      
+    }
+
+    #splash > div{
+        gap:20px;
+      
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width:1366px){
+    h1 > span {
+        font-size:130px;
+        
+    }
+
+    h1 {
+        top:290px;
+    }
+
+    
+    h2 > span {
+        
+        font-size: 70px;
+    }
+
+    #splash > div > a{
+        width:130px;
+        
+      
+    }
+
+    #splash > div{
+        gap:16px;
+      
+    }
+
+
+}
+    
+
+@media only screen and (max-width:1280px){ 
+    #splash > div > a {
+        height:90px;
+        font-size:80px;
+    } 
+    #splash > div{
+        top:350px;
+    }
+
+    #splash {
+        height:720px;
+    }
+
+    h1{
+        top:200px;
+    }
+    h2{
+        top:450px;
+    }
+}
+@media only screen and (max-width:1130px){
+    h1 > span {
+        font-size:96px;
+        
+    }
+    h2 {
+        top:460px;
+    }
+    h2 > span{
+        font-size: 60px;
+    }
+
+    #splash > div{
+        gap:10px;
+    }
+    
+
+    #splash > div > a{
+        width:100px;
+        font-size:70px;
+      
+    }
+}
+
+@media only screen and (max-width:850px){
+    #splash{height:1080px;}
+    #splash > div{
+        top:560px;
+            gap:20px;
+    
+    }
+
+    #splash > div > a {
+        width:160px;
+        height:100px;
+   
+    }
+
+    h1 > span {
+        font-size:70px;
+        
+    }
+
+    
+    h2 {
+        top:350px;
+    }
+    h2 > span{
+        font-size: 50px;
+    }
+
+
+}
+ 
+
+@media only screen and (max-width:668px){
+    h1 > span {
+        font-size:50px;
+        
+    }
+    h1 {
+        gap:10px;
+    }
+
+
+    h2 > span{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:445px){
+    #splash{height:900px;}
+    #splash > div {
+        top:530px;
+    }
+    h1 > span {
+        font-size:40px;
+        
+    }
+
+    h2 {
+        gap:10px;
+    }
+    h2 > span{
+        font-size: 25px;
+    }
+
+    #splash > div > a {
+        width:100px;
+        
+        
+      
+    }
+
+    #splash > div {
+        top:400px;
+    }
+}
+
+@media only screen and (max-width:359px){
+    h1 > span {
+        font-size:36px;
+        
+    }
+
+    h2 {
+        gap:10px;
+    }
+    h2 > span{
+        font-size: 25px;
+    }
+
+    #splash > div > a {
+        
+        height:70px;
+        font-size:50px;
+        
+      
+    }
+}
+
+@media only screen and (max-width:312px){
+    h2 > span{
+        font-size: 24px;
+    }
+    h1 > span {
+        font-size:32px;
+        
+    }
+}
+
+/* header responsive */
+@media only screen and (max-width:880px){
+    header{
+        width:100%;
+        max-width: 100%;
+        border-radius: 0;
+        border-left:none;
+        display:flex;
+        
+
+        
+        
+    }
+
+    header > section {
+        width:100%;
+        padding-top:10px;
+        
+        
+    }
+
+    #topbar > div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        gap:30px;
+        padding-left:39px;
+        
+    }
+
+
+    #topbar {
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    
+   
+
+    #topbar > div > button > a {
+        font-size:25px;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width:667px){
+
+    #topbar > div{
+        gap:3px;
+    }
+}
+
+.link2{
+    color:white;
+    text-decoration: none;
+    transition:300ms linear;
+    display:none;
+}
+.link2:hover{
+    color:rgb(158, 0, 0);
+    text-decoration: none;
+}
+
+@media only screen and (max-width:560px){
+
+    .link2{
+        display:block;
+    }
+
+    .link{
+        display:none;
+    }
+
+    #topbar>div>button>a{
+        font-size:46px;
+    }
+
+    #topbar>div{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width:385px){
+    #topbar>div>button>a{
+        font-size:35px;
+    }
+}
+
+
+/* pictures responsive */
+
+@media only screen and (max-width:1661px){
+    #leftpic1{
+        width:35%;
+    }
+
+    h5 > span, h3 > span{
+        text-align: center;
+    }
+
+    h3{
+        height:600px;
+    }
+
+    #carouselbooks img{
+        height:600px;
+        
+    }
+
+    #carouselbooks {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #solopic1{
+        padding-bottom:53px;
+    }
+
+    #onepic{
+        padding-bottom:53px;
+    }
+
+}
+
+@media only screen and (max-width:1320px){
+
+    h3 > span {
+        font-size:90px;
+    }
+
+    #leftpic1 {
+        width:20%;
+    }
+}
+
+@media only screen and (max-width:1300px){
+
+    h3 > span {
+        font-size:60px;
+    }
+
+}
+
+@media only screen and (max-width:930px){
+    h3{
+        flex-direction: row;
+        width:100%;
+        gap:30px;
+        height:50px;
+        border-right:none;
+        padding-top:160px;
+    }
+    .pictures{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #leftpic1{
+        width:100%;
+        height:0px;
+        
+    }
+}
+
+@media only screen and (max-width:673px){
+    #carouselbooks img{
+        height:400px;
+        
+    }
+    .pictures{
+        height:670px;
+    }
+}
+
+@media only screen and (max-width:573px){
+    #carouselbooks img{
+        height:330px;
+        
+    }
+}
+
+@media only screen and (max-width:533px){
+    #carouselbooks img{
+        height:310px;
+        
+    }
+
+    .pictures{
+        height:560px;
+    }
+
+    
+}
+
+@media only screen and (max-width:473px){
+    #carouselbooks img{
+        height:270px;
+        
+    }
+
+    h3 > span {
+        font-size: 40px;
+    }
+
+    
+}
+
+@media only screen and (max-width:436px){
+    #carouselbooks img{
+        height:260px;
+        
+    }
+
+    .pictures{
+        height:480px;
+    }
+}
+
+@media only screen and (max-width:403px){
+    #carouselbooks img{
+        height:240px;
+        
+    }
+}
+
+@media only screen and (max-width:380px){
+    #carouselbooks img{
+        height:230px;
+        
+    }
+}
+@media only screen and (max-width:363px){
+    #carouselbooks img{
+        height:210px;
+        
+    }
+}
+
+@media only screen and (max-width:353px){
+    #carouselbooks img{
+        height:200px;
+        
+    }
+
+    .pictures{
+        height:410px;
+    }
+
+
+    h3 > span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:343px){
+    #carouselbooks img{
+        height:190px;
+        
+    }
+}
+
+@media only screen and (max-width:333px){
+    #carouselbooks img{
+        height:180px;
+        
+    }
+}
+
+@media only screen and (max-width:323px){
+    #carouselbooks img{
+        height:170px;
+        
+    }
+}
+
+@media only screen and (max-width:298px){
+    #carouselbooks img{
+        height:160px;
+        
+    }
+
+    h3 > span {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+/* section 2 pics responsive */
+
+@media only screen and (max-width:1661px){
+    
+
+    h5{
+        height:600px;
+    }
+
+    #carouselmode img{
+        height:600px;
+        
+    }
+
+    #carouselmode {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:26px;
+    }
+
+    #solopic1{
+        padding-bottom:53px;
+    }
+
+    #onepic{
+        padding-bottom:53px;
+    }
+
+}
+
+@media only screen and (max-width:1320px){
+
+    h5 > span {
+        font-size:90px;
+    }
+
+   
+}
+
+@media only screen and (max-width:1300px){
+
+    h5 > span {
+        font-size:60px;
+    }
+
+}
+
+@media only screen and (max-width:930px){
+    h5{
+        flex-direction: row;
+        width:100%;
+        gap:30px;
+        height:50px;
+        border-right:none;
+        padding-top:160px;
+    }
+    
+}
+
+@media only screen and (max-width:673px){
+    #carouselmode img{
+        height:400px;
+        
+    }
+}
+
+@media only screen and (max-width:573px){
+    #carouselmode img{
+        height:330px;
+        
+    }
+}
+
+@media only screen and (max-width:533px){
+    #carouselmode img{
+        height:310px;
+        
+    }
+}
+
+@media only screen and (max-width:473px){
+    #carouselmode img{
+        height:270px;
+        
+    }
+}
+
+@media only screen and (max-width:436px){
+    #carouselmode img{
+        height:260px;
+        
+    }
+}
+
+@media only screen and (max-width:403px){
+    #carouselmode img{
+        height:240px;
+        
+    }
+}
+
+@media only screen and (max-width:380px){
+    #carouselmode img{
+        height:230px;
+        
+    }
+}
+@media only screen and (max-width:363px){
+    #carouselmode img{
+        height:210px;
+        
+    }
+}
+
+@media only screen and (max-width:353px){
+    #carouselmode img{
+        height:200px;
+        
+    }
+}
+
+@media only screen and (max-width:343px){
+    #carouselmode img{
+        height:190px;
+        
+    }
+}
+
+@media only screen and (max-width:333px){
+    #carouselmode img{
+        height:180px;
+        
+    }
+}
+
+@media only screen and (max-width:323px){
+    #carouselmode img{
+        height:170px;
+        
+    }
+}
+
+@media only screen and (max-width:298px){
+    #carouselmode img{
+        height:160px;
+        
+    }
+}
+
+
+/* section 3 pics responsive */
+
+
+@media only screen and (max-width:1661px){
+
+    #carouselanimals{
+        margin-top:27px;
+    }
+
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:600px;
+    }
+
+    #squarepic{
+        height:640px;
+        
+        gap:10px;
+        margin-bottom:58px;
+
+    }
+    
+    #squarepic > img{
+        height:295px;
+    
+    }
+
+    h4{
+        height:600px;
+        justify-content: center;
+        
+    }
+
+    h4 span {
+        font-size:70px;
+    }
+
+    h4 p {
+        font-size:16px;
+        width:85%;
+    }
+
+}
+
+@media only screen and (max-width:1320px){
+
+    .pictures2{
+        display:flex;
+        flex-direction: column;
+        height:1400px;
+    }
+
+    .pictures2 #leftpic1{
+        width:100%;
+    }
+
+    h4 {
+        width:100%;
+        border-right:0;
+    }
+
+    h4 > p{
+        padding-left:0;
+    }
+}
+
+
+@media only screen and (max-width:930px){
+   
+    .pictures2{
+        padding-top:350px;
+        height:1500px;
+    }
+
+    .pictures2 #rightpic1{
+        padding-top:400px;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:673px){
+
+    
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:400px;
+        
+    }
+
+    #squarepic > img{
+        height:195px;
+    
+    }
+
+    #squarepic{
+        height:440px;
+    }
+
+    .pictures2{
+        height:1300px;
+    }
+    
+    h4{
+        padding-top:90px;
+        
+    }
+
+    
+
+    
+}
+
+@media only screen and (max-width:573px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:330px;
+        
+    }
+
+    #squarepic > img{
+        height:160px;
+    
+    }
+
+    #squarepic{
+        height:349px;
+        margin-bottom:80px;
+    }
+}
+
+@media only screen and (max-width:533px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:310px;
+        
+    }
+
+    #squarepic > img{
+        height:150px;
+    
+    }
+
+    #squarepic{
+        height:349px;
+        margin-bottom:60px;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .pictures2{
+        height:1400px;
+    }
+
+    h4 {
+        padding-top:300px;
+    }
+
+    #carouselanimals{
+        margin-top:100px;
+    }
+
+    
+}
+
+@media only screen and (max-width:473px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:270px;
+        
+    }
+
+    #squarepic > img{
+        height:130px;
+    
+    }
+
+    #squarepic{
+        height:259px;
+        margin-bottom:110px;
+    }
+    
+    
+    
+
+}
+
+@media only screen and (max-width:436px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:260px;
+        
+    }
+
+    #squarepic > img{
+        height:115px;
+    
+    }
+
+    #squarepic{
+        height:270px;
+        margin-bottom:87px;
+    }
+
+    #squarepic > img{
+        width:30%;
+        height:125px;
+    }
+
+    h4 > span {
+        font-size:60px;
+    }
+
+    
+}
+
+@media only screen and (max-width:413px){
+    #squarepic{
+        height:270px;
+        margin-bottom:89px;
+    }
+
+}
+
+@media only screen and (max-width:403px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:240px;
+        
+    }
+    #squarepic > img{
+        height:115px;
+    
+    }
+
+    #squarepic{
+        height:240px;
+        margin-bottom:98px;
+    }
+
+}
+
+@media only screen and (max-width:380px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:230px;
+        
+    }
+
+    #squarepic > img{
+        height:110px;
+    
+    }
+
+    #squarepic{
+        height:230px;
+        margin-bottom:98px;
+    }
+}
+@media only screen and (max-width:363px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:210px;
+        
+    }
+
+    #squarepic > img{
+        height:100px;
+    
+    }
+
+    #squarepic{
+        height:210px;
+        margin-bottom:99px;
+    }
+
+    h4 > span {
+        font-size:55px;
+    }
+}
+
+@media only screen and (max-width:353px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:200px;
+        
+    }
+
+    #squarepic > img{
+        height:95px;
+    
+    }
+
+    #squarepic{
+        height:200px;
+        
+    }
+
+    h4{
+        padding-top:400px;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:343px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:190px;
+        
+    }
+
+    #squarepic > img{
+        height:90px;
+    
+    }
+
+    #squarepic{
+        height:200px;
+        margin-bottom:89px;
+    }
+
+    #carouselanimals{
+        margin-top:200px;
+    }
+}
+
+@media only screen and (max-width:333px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:180px;
+        
+    }
+
+    #squarepic > img{
+        height:85px;
+    
+    }
+
+    #squarepic{
+        height:200px;
+        margin-bottom:78px;
+    }
+
+    h4 > span {
+        font-size:46px;
+    }
+
+    
+}
+
+@media only screen and (max-width:323px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:170px;
+        
+    }
+
+    #squarepic > img{
+        height:80px;
+    
+    }
+
+    #squarepic{
+        height:200px;
+        margin-bottom:69px;
+    }
+
+    h4{
+        padding-top:450px;
+    }
+
+    
+}
+
+@media only screen and (max-width:298px){
+    #carouselanimals #solopic1 img, #carouselanimals #onepic img{
+        height:160px;
+        
+    }
+
+    #squarepic > img{
+        height:75px;
+    
+    }
+
+    #squarepic{
+        height:160px;
+        margin-bottom:99px;
+    }
+
+    h4 > span {
+        font-size:40px;
+    }
+
+    h4{
+        padding-top:600px;
+    }
+
+    #carouselanimals{
+        margin-top:300px;
+    }
+
+    .pictures2{
+        height:1600px;
+    }
+}
+
+
+
+/* last section pictures */
+
+
+@media only screen and (max-width:1661px){
+    
+
+    #carouselmariage img{
+        height:600px;
+        
+    }
+
+    #carouselmariage {
+        padding-top:53px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #solopic1{
+        padding-bottom:53px;
+    }
+
+    #onepic{
+        padding-bottom:53px;
+    }
+
+}
+
+@media only screen and (max-width:1320px){
+
+    
+
+    #leftpic1 {
+        width:20%;
+    }
+}
+
+
+
+@media only screen and (max-width:930px){
+    h3{
+        flex-direction: row;
+        width:100%;
+        gap:30px;
+        height:50px;
+        border-right:none;
+        padding-top:160px;
+    }
+    .pictures{
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    #leftpic1{
+        width:100%;
+        height:0px;
+        
+    }
+    
+    @media only screen and (max-width:673px){
+        #carouselmariage img{
+            height:400px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:573px){
+        #carouselmariage img{
+            height:330px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:533px){
+        #carouselmariage img{
+            height:310px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:473px){
+        #carouselmariage img{
+            height:270px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:436px){
+        #carouselmariage img{
+            height:260px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:403px){
+        #carouselmariage img{
+            height:240px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:380px){
+        #carouselmariage img{
+            height:230px;
+            
+        }
+    }
+    @media only screen and (max-width:363px){
+        #carouselmariage img{
+            height:210px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:353px){
+        #carouselmariage img{
+            height:200px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:343px){
+        #carouselmariage img{
+            height:190px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:333px){
+        #carouselmariage img{
+            height:180px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:323px){
+        #carouselmariage img{
+            height:170px;
+            
+        }
+    }
+    
+    @media only screen and (max-width:298px){
+        #carouselmariage img{
+            height:160px;
+            
+        }
+    }
+}
+
+
+/* cursus */
+
+
+@media only screen and (max-width:1830px){
+    #aboutmebottom > div{
+        width:40%;
+    }
+
+    #aboutmebottomparagraph {
+        width:60%;
+    }
+}
+
+@media only screen and (max-width:1550px){
+    #aboutmebottom > div{
+        width:30%;
+    }
+
+    #aboutmebottomparagraph {
+        width:70%;
+    }
+
+    h7 > span {
+        font-size:70px;
+    }
+
+    #aboutmebottom > div > div{
+        width:300px;
+        height:300px;
+    }
+
+    h6 {
+        width:700px;
+    }
+}
+
+@media only screen and (max-width:1328px){
+    #aboutmebottomparagraph > div {
+        font-size:18px;
+    }
+}
+
+@media only screen and (max-width:1320px){
+    #aboutmetitle{
+        font-size:100px;
+    }
+}
+
+
+
+@media only screen and (max-width:1183px){
+    #aboutmebottomparagraph > div {
+        font-size:17px;
+    }
+
+    #aboutmebottom > div > div{
+        width:250px;
+        height:250px;
+    }
+
+    h7 > span {
+        font-size:50px;  
+    }
+
+}
+
+@media only screen and (max-width:1050px){
+    #aboutmebottomparagraph > div {
+        font-size:16px;
+    }
+}
+
+@media only screen and (max-width:940px){
+    #aboutmebottomparagraph > div {
+        font-size:16px;
+    }
+
+    #aboutmebottom > div > div{
+        width:200px;
+        height:200px;
+    }
+}
+
+@media only screen and (max-width:867px){
+
+    h6{
+        width:500px;
+        
+    }
+
+    #aboutmetitle{
+        font-size:80px;
+    }
+    
+
+    #aboutmebottom{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #aboutmebottomparagraph > div {
+        font-size:16px;
+        width:100%;
+    }
+
+
+    h7 > span{
+        font-size:80px;
+        width:100%;
+    }
+
+    #aboutmebottom > div {
+        width:100%;
+        height:500px;
+        padding-top:50px;
+    }
+
+
+    #aboutmebottom > div > div{
+        width:270px;
+        height:270px;
+    }
+
+    #aboutmeborder {
+        display:none;
+    }
+
+    #aboutmebottomparagraph{
+        width:95%;
+        margin-bottom:100px;
+    }
+
+    #aboutme{
+        height:1450px;
+    }
+}
+
+@media only screen and (max-width:706px){
+    #aboutme{
+        height:1650px;
+    }
+
+    #aboutmebottomparagraph{
+        margin-bottom:240px;
+    }  
+}
+
+@media only screen and (max-width:620px){
+    h6{
+        width:400px;
+        
+    }
+
+}
+
+@media only screen and (max-width:620px){
+    
+    h6{
+        width:300px;
+    }
+}
+
+@media only screen and (max-width:413px){
+    
+    h6{
+        width:300px;
+    }
+
+    h7 > span{
+        font-size:70px;
+    }
+
+    #aboutmebottom > div > div{
+        width:200px;
+        height:200px;
+    }
+
+    #aboutme{
+        height:1700px;
+    }
+}
+
+@media only screen and (max-width:357px){
+    
+    h6{
+        width:200px;
+        
+    }
+
+    #aboutmetitle{
+        font-size:50px;
+    }
+
+    h7 > span{
+        font-size:40px;
+    }
+}
+
+@media only screen and (max-width:305px){
+    #aboutme{
+        height:2000px;
+    }
+    
+}
+
+
+/* responsive services*/
+
+@media only screen and (max-width:1400px){
+    #myservices{
+        height:900px;
+    }
+    #servicebox > div{
+        height:300px;
+    }
+    #servicebox > div > div {
+        border-radius:70px;
+        
+    }
+
+    #servicebox > div > div > img {
+        border-radius:70px 0 0 70px;
+    }
+
+    .purpose{
+        font-size:14px;
+    }
+
+    .title{
+        font-size:26px;
+    }
+    
+    .time{
+        font-size:17px;
+    }
+
+    .money{
+        font-size:20px;
+    }
+}
+
+@media only screen and (max-width:1320px){
+    #servicestitle{
+        font-size:100px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    #myservices{
+        height:800px;
+    }
+    #servicebox > div{
+        height:220px;
+    }
+    #servicebox > div > div {
+        border-radius:50px;
+        
+    }
+
+    #servicebox > div > div > img {
+        border-radius:50px 0 0 50px;
+    }
+
+    .purpose{
+        font-size:12px;
+    }
+
+    .title{
+        font-size:20px;
+    }
+    
+    .time{
+        font-size:13px;
+    }
+
+    .money{
+        font-size:15px;
+    }
+
+}
+
+
+@media only screen and (max-width:867px){
+    #servicestitle{
+        font-size:80px;
+    }
+
+    #myservices{
+        height:auto;
+        display:flex;
+        flex-direction: column;
+    }
+
+    #servicebox {
+        gap:30px;
+        width:100%;
+        
+    }
+    
+    #servicebox > div {
+        
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        width:100%;
+        align-items: center;
+    }
+
+    #servicebox > div:last-child { 
+        padding-bottom:50px;
+    }
+
+    #servicebox > div > div {
+        height:300px;
+    }
+
+    .purpose{
+        font-size:18px;
+    }
+
+    .title{
+        font-size:26px;
+    }
+    
+    .time{
+        font-size:25px;
+    }
+
+    .money{
+        font-size:25px;
+    }
+
+}
+
+@media only screen and (max-width:485px){
+    #servicebox > div > div {
+        height:240px;
+    }
+
+    .purpose{
+        font-size:14px;
+    }
+
+    .title{
+        font-size:20px;
+    }
+    
+    .time{
+        font-size:20px;
+    }
+
+    .money{
+        font-size:20px;
+    }
+    
+}
+
+@media only screen and (max-width:357px){
+    
+    #servicestitle{
+        font-size:50px;
+    }
+
+    #servicebox > div > div {
+        height:150px;
+        width:100%;
+    }
+
+    #servicebox > div {
+        width:90%;
+    }
+
+    #servicebox {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .purpose{
+        font-size:10px;
+    }
+
+    .title{
+        font-size:15px;
+    }
+    
+    .time{
+        font-size:14px;
+    }
+
+    .money{
+        font-size:14px;
+    }
+}
+
+@media only screen and (max-width:257px){
+    
+    #servicestitle{
+        font-size:50px;
+    }
+
+    #servicebox > div > div {
+        height:150px;
+        width:100%;
+    }
+
+    #servicebox > div {
+        width:90%;
+    }
+
+    #servicebox {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .purpose{
+        font-size:10px;
+    }
+
+    .title{
+        font-size:10px;
+    }
+    
+    .time{
+        font-size:10px;
+    }
+
+    .money{
+        font-size:10px;
+    }
+}
+
+/* responsive contact*/
+
+@media only screen and (max-width:1415px){
+    #submitbutton{
+        right:90px;
+        margin-top:600px;
+    }
+}
+
+@media only screen and (max-width:867px){
+    h6 > span{
+        font-size:
+        80px;
+    }
+
+    #submitbutton{
+        right:50px;
+        margin-top:660px;
+    }
+}
+
+@media only screen and (max-width:629px){
+    #submitbutton{
+        right:40px;
+        margin-top:630px;
+    }
+}
+@media only screen and (max-width:551px){
+    #submitbutton{
+        right:40px;
+        margin-top:590px;
+    }
+}
+@media only screen and (max-width:450px){
+    #submitbutton{
+        width:50px;
+        margin-top:670px;
+    }
+
+    #hidespan{
+        display:none;
+    }
+
+    #paragraph2{
+        font-size:20px;
+    }
+
+    #mail{
+        font-size:20px;
+    }
+
+    #messages{
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:374px){
+    #submitbutton{
+        width:50px;
+    }
+
+    #hidespan{
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width:357px){
+    #submitbutton{
+        width:50px;
+        margin-top:690px;
+    }
+
+    #hidespan{
+        display:none;
+    }
+
+    h6 > span{
+        font-size:56px;
+    }
+
+}
+
+@media only screen and (max-width:304px){
+    #submitbutton{
+        width:50px;
+        margin-top:670px;
+    }
+
+    #hidespan{
+        display:none;
+    }
+
+    h6 > span{
+        font-size:56px;
+    }
+
+}
+
+@media only screen and (max-width:284px){
+    #submitbutton{
+        width:50px;
+        margin-top:670px;
+    }
+
+    #hidespan{
+        display:none;
+    }
+
+    h6 > span{
+        font-size:56px;
+    }
+
+    #mail{
+        font-size:16px;
+    }
+
+    #messages{
+        font-size:16px;
+    }
+
+}
+
+
+
